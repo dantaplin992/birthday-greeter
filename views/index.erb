@@ -1,0 +1,32 @@
+<head>
+  <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css">
+</head>
+<body class="background">
+  <div class="content">
+    <h1>Hello!</h1>
+    <form action="/greeting" method = "post">
+      <h2>Please Enter Your Name:</h2>
+      <input type="text" name="name1">
+      <h2>Please Enter Your Birthday:</h2>
+      <p>
+      Day: <input type="text" name="day">
+      Month: <input list="months" name = "month">
+      <datalist id="months">
+        <option value="January">
+        <option value="February">
+        <option value="March">
+        <option value="April">
+        <option value="May">
+        <option value="June">
+        <option value="July">
+        <option value="August">
+        <option value="September">
+        <option value="October">
+        <option value="November">
+        <option value="December">
+      </datalist>
+      </p>
+      <input type="submit">
+    </form>
+  </div>
+</body>

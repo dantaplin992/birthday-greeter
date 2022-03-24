@@ -1,0 +1,13 @@
+<head>
+  <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css">
+</head>
+<body class="background">
+  <div class="content">
+    <% if @days_left == 0 %>
+      <h1>Happy birthday <%= @name %>!</h1>
+    <% else %>
+      <h1>Only <%= @days_left %> day<% if @days_left > 1 %>s<% end %> until <%= @name %>'s Birthday!</h1>
+    <% end %>
+  </div>
+</body>
+
